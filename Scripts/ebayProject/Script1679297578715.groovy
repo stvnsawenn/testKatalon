@@ -12,19 +12,17 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.driver.DriverFactory
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
+import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword as WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import java.util.Iterator;
-import java.util.List
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-
-
+import java.util.Iterator as Iterator
+import java.util.List as List
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.interactions.Actions as Actions
 
 WebUI.openBrowser('')
 
@@ -42,22 +40,23 @@ WebUI.selectOptionByValue(findTestObject('Object Repository/Page_Electronics, Ca
 
 WebUI.click(findTestObject('Object Repository/Page_Electronics, Cars, Fashion, Collectibl_475ffe/Search Button'))
 
-result = WebUI.getText(findTestObject('Object Repository/Page_iPhone in Cell Phones  Accessories for_674848/Results for iPhone'))
+not_run: result = WebUI.getText(findTestObject('Object Repository/Page_iPhone in Cell Phones  Accessories for_674848/Results for iPhone'))
 
-println(result)
+not_run: println(result)
 
-nthProduct = WebUI.getText(findTestObject('Page_iPhone in Cell Phones  Accessories for_674848/NthProduct'))
+not_run: nthProduct = WebUI.getText(findTestObject('Page_iPhone in Cell Phones  Accessories for_674848/NthProduct'))
 
-println(nthProduct)
+not_run: println(nthProduct)
 
-WebDriver driver = DriverFactory.getWebDriver()
+not_run: WebDriver driver = DriverFactory.getWebDriver()
 
-List<WebElement> allProducts = driver.findElements(By.xpath("//div[@id='srp-river-results']/ul/li"))
-Iterator<WebElement> iteratorAllProducts = allProducts.iterator();
+not_run: List allProducts = driver.findElements(By.xpath('//div[@id=\'srp-river-results\']/ul/li'))
 
-Actions action = new Actions(driver)
+not_run: Iterator<WebElement> iteratorAllProducts = allProducts.iterator()
 
-while (iteratorAllProducts.hasNext()) {
+not_run: Actions action = new Actions(driver)
+
+not_run: while (iteratorAllProducts.hasNext()) {
     product = iteratorAllProducts.next()
 
     action.moveToElement(product).build().perform()
@@ -67,5 +66,7 @@ while (iteratorAllProducts.hasNext()) {
     println('------------------------------------------------------------')
 }
 
-WebUI.closeBrowser()
+not_run: WebUI.closeBrowser()
+
+WebUI.executeJavaScript('window.scrollTo(0,  document.body.scrollHeight)', null)
 
