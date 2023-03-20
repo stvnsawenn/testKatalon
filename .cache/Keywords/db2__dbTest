@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "AD17B464C86E2497BAA93970C8878337",
+  "keywordFileContentHash": "1C591F1C7AD7D6D82248E159DF648A27",
   "keywordClasses": [
     {
       "name": "db2.dbTest",
@@ -59,7 +59,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "executeQuery",
@@ -77,14 +78,16 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "closeDatabaseConnection",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

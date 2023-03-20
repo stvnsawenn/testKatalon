@@ -33,46 +33,46 @@ import internal.GlobalVariable
 
 public class postgresql {
 	private static PgConnection connection = null;
-	
-		@Keyword		// Connect to database
-		def connectDB(String url, String dbname, String username, String password) {
-			String link = "jdbc:postgresql://" + url + "/" + dbname
-			if (connection != null && connection.isClosed()) {
-				connection.close()
-			}
-			connection =  DriverManager.getConnection(link, username, password)
-			return connection
+
+	@Keyword		// Connect to database
+	def connectDB(String url, String dbname, String username, String password) {
+		String link = "jdbc:postgresql://" + url + "/" + dbname
+		if (connection != null && connection.isClosed()) {
+			connection.close()
 		}
-	
-		@Keyword		// Execute query
-		def executeQuery(String queryString) {
-			Statement stm = connection.createStatement()
-			ResultSet resultSet = stm.executeQuery(queryString)
-			ResultSetMetaData metadata = resultSet.getMetaData()
-			int columnCount = metadata.getColumnCount()
-			List<List<String>> rowList = new LinkedList<List<String>>()
-			while (resultSet.next()) {
-				List<String> row = new LinkedList<>()
-				for(int i = 1; i <= columnCount; i++) {
-					Objects value = resultSet.getObject(i)
-					row.add(value)
-				}
-				rowList.add(row)
+		connection =  DriverManager.getConnection(link, username, password)
+		return connection
+	}
+
+	@Keyword		// Execute query
+	def executeQuery(String queryString) {
+		Statement stm = connection.createStatement()
+		ResultSet resultSet = stm.executeQuery(queryString)
+		ResultSetMetaData metadata = resultSet.getMetaData()
+		int columnCount = metadata.getColumnCount()
+		List<List<String>> rowList = new LinkedList<List<String>>()
+		while (resultSet.next()) {
+			List<String> row = new LinkedList<>()
+			for(int i = 1; i <= columnCount; i++) {
+				Objects value = resultSet.getObject(i)
+				row.add(value)
 			}
-			for(List<String> row: rowList) {
-				for(String data: row) {
-					System.out.print(data + " ")
-				}
-				System.out.println()
-			}
-			return rowList
+			rowList.add(row)
 		}
-	
-		@Keyword 		// Closing the connection
-		def closeDatabaseConnection() {
-			if (connection != null && !connection.isClosed()) {
-				connection.close()
+		for(List<String> row: rowList) {
+			for(String data: row) {
+				System.out.print(data + " ")
 			}
-			connection = null
+			System.out.println()
 		}
+		return rowList
+	}
+
+	@Keyword 		// Closing the connection
+	def closeDatabaseConnection() {
+		if (connection != null && !connection.isClosed()) {
+			connection.close()
+		}
+		connection = null
+	}
 }

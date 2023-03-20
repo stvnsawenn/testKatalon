@@ -36,11 +36,11 @@ CustomKeywords.'db1.postgresql.connectDB'(url, dbname, username, password)
 
 // Execute query
 String selectData = 'SELECT * FROM res_partner'
-List<List> rowList = CustomKeywords.'db1.postgresql.executeQuery'(selectData)
+List<Map<String, Object>> rowList = CustomKeywords.'db1.postgresql.executeQuery'(selectData)
 
 // Display result
 //println('--------------- Lokasi = ' + rowList.get(0).get(1) + '---------------')
-println(rowList.get(0))
+println(rowList.get(0).get('name'))
 
 // Disconnect
 CustomKeywords.'db1.postgresql.closeDatabaseConnection'()

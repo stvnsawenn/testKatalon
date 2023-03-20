@@ -47,8 +47,9 @@ public class dbTest {
 		ResultSet rs = stm.executeQuery(queryString)
 //		rs.next()
 		while(rs.next()) {
-			println(rs.getString("name") + " - " + rs.getString("city"))
+			println("ID - " + rs.getString("id") + " Name - " + rs.getString("name"))
 		}
+//		return rs
 	}
 
 	@Keyword 		// Closing the connection

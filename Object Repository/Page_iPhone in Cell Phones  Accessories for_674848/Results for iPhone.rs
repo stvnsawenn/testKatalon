@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Results for iPhone</name>
+   <tag></tag>
+   <elementGuidId>18857497-7bbf-42a6-a81f-3cfe43a56cd8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>h1.srp-controls__count-heading</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//h1[contains(text(),'results for')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h1</value>
+      <webElementGuid>84e372e9-0fda-4943-abdb-64fd300f3063</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>srp-controls__count-heading</value>
+      <webElementGuid>1290541f-259d-4ae3-a1f3-809e6f781fb8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>1,100,000+ results for iPhone</value>
+      <webElementGuid>82001299-cd59-4d22-b479-82fcca0153cc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;mainContent&quot;)/div[@class=&quot;s-answer-region s-answer-region-center-top&quot;]/div[@class=&quot;srp-controls srp-controls--with-list srp-controls--with-checkbox srp-controls--resize&quot;]/div[@class=&quot;clearfix srp-controls__row-2&quot;]/div[@class=&quot;srp-controls__row-cells&quot;]/div[@class=&quot;srp-controls__control srp-controls__count&quot;]/h1[@class=&quot;srp-controls__count-heading&quot;]</value>
+      <webElementGuid>a9c35071-a7c2-4c69-8bec-80458e1cd7d6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='mainContent']/div/div/div[2]/div/div/h1</value>
+      <webElementGuid>60d6fc89-b789-4161-bcde-f5b333dfd63f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='+ results for']/parent::*</value>
+      <webElementGuid>7a216629-32fc-40db-90d1-79f31d817cb6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h1</value>
+      <webElementGuid>76918576-75c4-442b-9ffe-bcf6c1531169</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h1[(text() = '1,100,000+ results for iPhone' or . = '1,100,000+ results for iPhone')]</value>
+      <webElementGuid>59b4c156-5b28-4a6a-b2e2-f5bd72a9a749</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

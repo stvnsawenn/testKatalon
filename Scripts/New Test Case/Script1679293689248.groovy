@@ -16,12 +16,31 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import java.sql.DriverManager as DriverManager
+import java.sql.ResultSet as ResultSet
+import java.sql.Statement as Statement
+import java.sql.Connection as Connection
+import java.sql.PreparedStatement as PreparedStatement
+import java.sql.Driver as Driver
 
-WebUI.openBrowser('')
 
-WebUI.navigateToUrl('https://thetestingworld.com/testings/')
+String url = 'localhost:5432'
 
-WebUI.maximizeWindow()
+String dbname = 'porto_db_01_30'
 
-WebUI.setText(findTestObject('Page_Login  Sign Up Forms/input_Address type HomeOffice_fld_email'), email + "@gmail.com")
+String username = 'odoo'
+
+String password = 'odoo'
+
+
+CustomKeywords.'db2.dbTest.connectDB'(url, dbname, username, password)
+
+String query = 'SELECT * FROM res_bank ORDER BY id'
+CustomKeywords.'db2.dbTest.executeQuery'(query)
+	
+//CustomKeywords.'db2.dbTest.closeDatabaseConnection'()
+
+
+
+
 
