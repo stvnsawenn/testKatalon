@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>TestMultipleTimes</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>3</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>b7274854-394a-41a8-9ce7-ff3ee342513f</testSuiteGuid>
+   <testCaseLink>
+      <guid>141631d0-aa67-4e09-a200-6e4482775931</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/dbTest3</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>bdfe24cc-cec3-49d9-973b-8db56a8e0657</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/res_partner</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>bdfe24cc-cec3-49d9-973b-8db56a8e0657</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>name</value>
+         <variableId>adc06a96-8fd1-4b85-922d-3cd982be8bfe</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>bdfe24cc-cec3-49d9-973b-8db56a8e0657</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>id</value>
+         <variableId>6e1f7ce5-bda1-4c9c-b9bc-ee7745d6cf44+'@gmail.com'</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

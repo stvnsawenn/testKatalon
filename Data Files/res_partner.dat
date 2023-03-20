@@ -8,9 +8,12 @@
    <dataFileGUID>5573ef83-dad3-4512-9e1c-bd8e32f9d4fc</dataFileGUID>
    <dataSourceUrl></dataSourceUrl>
    <driver>DBData</driver>
+   <driverClassName></driverClassName>
    <isInternalPath>false</isInternalPath>
-   <query></query>
+   <password></password>
+   <query>select * from res_partner</query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName></sheetName>
-   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+   <user></user>
+   <usingGlobalDBSetting>true</usingGlobalDBSetting>
 </DataFileEntity>
