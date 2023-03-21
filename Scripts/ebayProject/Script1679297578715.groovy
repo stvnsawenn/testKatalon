@@ -68,5 +68,6 @@ not_run: while (iteratorAllProducts.hasNext()) {
 
 not_run: WebUI.closeBrowser()
 
+//	scroll to bottom
 WebUI.executeJavaScript('window.scrollTo(0,  document.body.scrollHeight)', null)
 
